@@ -1,94 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nícolas Eloy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <div id="nome-principal">
-            <a href="#"><img src="#" alt="icone-nome">Nícolas Eloy</a>
-        </div>
+      <div id="nome-principal">
+        <img
+          src="imagens/programacao.png"
+          style="width: 23px; height: 25px; margin: auto"
+          alt="icone-nome"
+        /><a href="#">Nícolas Eloy</a>
+      </div>
 
-        <div id="menu">
-            <div id="menu-projetos">
-                <a href="#">projetos</a>
-            </div>
-            <div id="menu-sobre-mim">
-                <a href="#">sobre mim</a>
-            </div>
-            <div id="menu-curriculo">
-                <a href="currículo"></a>
-            </div>
+      <div id="menu">
+        <div id="menu-projetos">
+          <a href="#">projetos</a>
         </div>
+        <div id="menu-sobre-mim">
+          <a href="#">sobre mim</a>
+        </div>
+        <div id="menu-curriculo">
+          <a href="currículo"></a>
+        </div>
+      </div>
     </nav>
 
     <main>
-        <section id="box-principal">
-            <div id="descricao">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis dolor, tenetur quod corrupti.
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam harum reprehenderit voluptatum id illo, aliquam possimus autem quos laboriosam placeat ab consequatur.
-            </div>
-            <div id="imagem-box">
-                <img src="#" alt="imagem-box">
-            </div>
-        </section>
+      <section id="box-principal">
+        <div id="descricao">
+          <p>
+            Olá, meu nome é <span class="marcante">Nícolas</span>. Tenho
+            <span class="marcante">18 anos</span>, sou acadêmico de
+            <span class="tecnologia">Ciência da Computação</span> e também curso
+            <span class="tecnologia">Desenvolvimento de Sistemas</span>!
+          </p>
+          <br />
+          <p>
+            <span class="marcante">Possuo conhecimento</span> em
+            <span class="tecnologia">Python</span> e
+            <span class="tecnologia">JavaScript</span>, além de habilidades em
+            tecnologias como <span class="tecnologia">HTML5</span> e
+            <span class="tecnologia">CSS3</span>. Atualmente, estou em fase de
+            <span class="marcante">aprendizado contínuo</span> e apresento neste
+            portfólio todos os <span class="marcante">projetos</span> que
+            desenvolvi até o momento. Cada trabalho reflete meu
+            <span class="marcante">progresso</span> e
+            <span class="marcante">dedicação</span> em me tornar um
+            desenvolvedor mais <span class="marcante">competente</span> e
+            <span class="marcante">inovador</span>.
+          </p>
+        </div>
+        <div id="imagem-box">
+          <img src="imagens/imagem-nicolas.jpg" alt="imagem-box" />
+        </div>
+      </section>
 
+      <div id="projects">
         <h2>PROJECTS ↓</h2>
+      </div>
 
-        <section id="projetos">
-            <div>
-                <a href="#">
-                    <img src="https://assets-global.website-files.com/5e72ee70106da16cf5a7630a/602d3dd78c10e79f5503e792_Cover.png" alt="imagem-projeto">
-                </a>
-                <div class="descricao-projeto">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <a href="#">Unde id hic amet et quia voluptate non, illo nulla!</a>
-                </div>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://assets-global.website-files.com/5e72ee70106da16cf5a7630a/602d3dd78c10e79f5503e792_Cover.png" alt="imagem-projeto">
-                </a>
-                <div class="descricao-projeto">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <a href="#">Unde id hic amet et quia voluptate non, illo nulla!</a>
-                </div>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://assets-global.website-files.com/5e72ee70106da16cf5a7630a/602d3dd78c10e79f5503e792_Cover.png" alt="imagem-projeto">
-                </a>
-                <div class="descricao-projeto">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <a href="#">Unde id hic amet et quia voluptate non, illo nulla!</a>
-                </div>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="https://assets-global.website-files.com/5e72ee70106da16cf5a7630a/602d3dd78c10e79f5503e792_Cover.png" alt="imagem-projeto">
-                </a>
-                <div class="descricao-projeto">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <a href="#">Unde id hic amet et quia voluptate non, illo nulla!</a>
-                </div>
-            </div>
-        </section>
+      <section id="projetos">
+        <div>
+          <a
+            class="img-projeto"
+            href="https://nicolasmleloy.github.io/QR-Code-Instagram/"
+            target="_blank"
+          >
+            <img src="imagens/site-qrcode.png" alt="imagem-site-qrcode" />
+          </a>
+          <div class="descricao-projeto">
+            <h2>Projeto QR Code Instagram</h2>
+            <a href="#"
+              >Um dos primeiros projetos a ser desenvolvido. Simples, com
+              objetivo de praticar e divulgar a rede social de uma maneira
+              diferente.</a
+            >
+          </div>
+        </div>
+        <div>
+          <a
+            class="img-projeto"
+            href="https://nicolasmleloy.github.io/projeto_android/"
+            target="_blank"
+          >
+            <img src="imagens/site-android.png" alt="imagem-site-android" />
+          </a>
+          <div class="descricao-projeto">
+            <h2>Site android</h2>
+            <a href="#"
+              >Projeto desenvolvido como desafio do curso de HTML e CSS do
+              "Curso em Vídeo".</a
+            >
+          </div>
+        </div>
+        <div>
+          <a class="img-projeto" href="#">
+            <img src="imagens/algoritmos-senacms.webp" alt="imagem-projeto" />
+          </a>
+          <div class="descricao-projeto">
+            <h2>Desenvolvimento de Sistemas - Senac MS</h2>
+            <a href="#"
+              >Tudo o que está sendo feito nas aulas de algoritmos do curso de
+              Desenvolvimento de Sistemas no Senac MS.</a
+            >
+          </div>
+        </div>
+        <div>
+          <a class="img-projeto" href="#">
+            <img
+              src="https://assets-global.website-files.com/5e72ee70106da16cf5a7630a/602d3dd78c10e79f5503e792_Cover.png"
+              alt="imagem-projeto"
+            />
+          </a>
+          <div class="descricao-projeto">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <a href="#">Unde id hic amet et quia voluptate non, illo nulla!</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div>
-            <span class="footer">@July 2024 nícolas eloy | created with HTML5, CSS3 & JavaScript</span>
-        </div>
-        <div>
-            <a class="footer" href="#">nicolasmarceloeloy@gmail.com</a>  |  <a class="footer" href="#">LinkedIn</a>
-        </div>
+      <div>
+        <span class="footer"
+          >@July 2024 nícolas eloy | created with HTML5, CSS3 & JavaScript</span
+        >
+      </div>
+      <div>
+        <a class="footer" href="#">nicolasmarceloeloy@gmail.com</a> |
+        <a class="footer" href="#">LinkedIn</a>
+      </div>
     </footer>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
