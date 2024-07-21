@@ -1,35 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #F6F0E6;
+    background-color: #2e2e2e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*NAV----------------------------------*/
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 35px;
+    padding: 20px 35px;
     gap: 100px;
     align-items: center;
 }
 
 nav a {
+    font-size: 1rem;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 800;
+    padding: 10px;
 }
 
 nav a:hover {
-    color: #AB7100;
+    background-color: white;
+    color: #0047AB;
     transition: color 0.3s ease;
 }
 
 #nome-principal {
     display: flex;
-    gap: 3px;
+    gap: 5px;
 }
 
 #nome-principal a {
@@ -42,8 +48,10 @@ nav a:hover {
 }
 
 #menu a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
+
+/*BOX PRINCIPAL-----------------------*/
 
 #box-principal {
     display: flex;
@@ -59,8 +67,8 @@ nav a:hover {
     margin: auto 0px auto 0px;
     width: 450px;
     padding: 30px;
-    text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 40px;
 }
 
 .tecnologia {
@@ -84,13 +92,25 @@ nav a:hover {
     margin: auto 20px;
 }
 
+/*PROJETOS----------------------------*/
+
 #projects {
     display: flex;
-    margin: 70px;
+    margin: 90px;
 }
 
-#projects h2 {
+#projects a {
     margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#projects a:hover {
+    background-color: white;
+    color: #0047AB;
 }
 
 #projetos {
@@ -99,19 +119,57 @@ nav a:hover {
     display: flex;
     background-color: white;
     padding: 40px;
-    margin: 200px auto;
+    margin: auto;
     align-items: center;
+    justify-content: center;
 }
 
 #projetos div {
     display: flex;
-    padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 30px;
+}
+
+.img-projeto {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #0047AB;
 }
 
 .img-projeto img {
+    margin: auto;
     width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1092px) {
+    #projetos {
+        flex-direction: column;
+    }
+
+    #projetos div {
+        flex-direction: column;
+
+    }
+
+    .img-projeto {
+        display: flex;
+        margin: auto;
+        width: 380px;
+        height: 200px;
+        padding: 10px;
+        background-color: #0047AB;
+    }
+
+    .img-projeto img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .descricao-projeto h2 {
@@ -122,4 +180,88 @@ nav a:hover {
     text-align: center;
     text-decoration: none;
     color: black;
+}
+
+#sobre-mim {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    height: 500px;
+    background-color: rgb(37, 37, 37);
+    margin: auto;
+    box-shadow: 0px 5px 20px 1px #7d7d7d85
+}
+
+#box-sm {
+    margin: auto;
+}
+
+#titulo {
+    color: white;
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    align-items: center;
+    padding: 5px;
+}
+
+#titulo h2 {
+    margin: 0px auto;
+}
+
+#box-sm p {
+    font-size: 1.3rem;
+    width: 700px;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+/*RODAPE-------------------------------*/
+
+footer {
+    display: flex;
+    background-color: black;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 10px
+}
+
+footer a, span {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+footer div {
+    display: flex;
+}
+
+footer #redes-sociais {
+    gap: 10px;
+}
+
+#gmail {
+    font-weight: 700;
+    padding: 5px;
+}
+
+#gmail:hover {
+    background-color: white;
+    color: #0047AB;
+    transition: color 0.3s ease;
+}
+
+#linkedin {
+    font-weight: 700;
+    padding: 5px;
+}
+
+#linkedin:hover {
+    background-color: white;
+    color: #0047AB;
+    transition: color 0.3s ease;
 }
