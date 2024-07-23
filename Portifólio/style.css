@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +8,7 @@
 
 body {
     background-color: #2e2e2e;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto Mono", monospace;
 }
 
 /*NAV----------------------------------*/
@@ -111,76 +113,87 @@ nav a:hover {
 #projects a:hover {
     background-color: white;
     color: #0047AB;
+    transition: color 0.3s ease;
+}
+
+#box-projetos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: white;
 }
 
 #projetos {
-    width: 100%;
-    height: 100%;
     display: flex;
-    background-color: white;
-    padding: 40px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-#projetos div {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin: 30px;
-}
-
-.img-projeto {
-    display: flex;
-    margin: auto;
     width: 100%;
     height: 100%;
+    gap: 50px;
+    padding: 30px;
+    background-color: #AB7100;
+    box-shadow: 1px 1px 10px 1px gray inset;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.164);
+}
+
+.proj a{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    background-color: #0047AB;
+    margin: 20px auto;
+}
+
+.proj img {
+    width: 300px;
+    height: 150px;
+    margin: auto;
     padding: 10px;
+}
+
+.descricao-projeto{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.descricao-projeto h2{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
     background-color: #0047AB;
 }
 
-.img-projeto img {
-    margin: auto;
+.descricao-projeto a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
     width: 100%;
     height: 100%;
+    background-color: #2e2e2e;
+    color: white;
+    
 }
 
-@media (max-width: 1092px) {
-    #projetos {
-        flex-direction: column;
-    }
-
-    #projetos div {
-        flex-direction: column;
-
-    }
-
-    .img-projeto {
-        display: flex;
-        margin: auto;
-        width: 380px;
-        height: 200px;
-        padding: 10px;
-        background-color: #0047AB;
-    }
-
-    .img-projeto img {
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
+.descricao-projeto a p{
+    margin: auto;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
-.descricao-projeto h2 {
-    text-align: center;
-}
-
-.descricao-projeto a {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
+/*SOBRE MIM----------------------------*/
 
 #sobre-mim {
     display: flex;
@@ -189,7 +202,7 @@ nav a:hover {
     height: 500px;
     background-color: rgb(37, 37, 37);
     margin: auto;
-    box-shadow: 0px 5px 20px 1px #7d7d7d85
+    box-shadow: 0px 1px 20px 5px #7d7d7d4d
 }
 
 #box-sm {
@@ -210,7 +223,7 @@ nav a:hover {
 }
 
 #box-sm p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 700px;
     text-align: justify;
     color: white;
@@ -240,7 +253,12 @@ footer div {
     display: flex;
 }
 
+#descricao-footer {
+    font-size: 0.9rem;
+}
+
 footer #redes-sociais {
+    font-size: 0.9rem;
     gap: 10px;
 }
 
