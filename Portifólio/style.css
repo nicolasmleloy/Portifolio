@@ -91,7 +91,7 @@ nav a:hover {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin: auto 20px;
+    margin: auto;
 }
 
 /*PROJETOS----------------------------*/
@@ -122,6 +122,7 @@ nav a:hover {
     height: 100%;
     padding: 50px;
     background-color: white;
+    box-shadow: 1px 1px 10px 1px gray inset;
 }
 
 #projetos {
@@ -131,8 +132,6 @@ nav a:hover {
     height: 100%;
     gap: 50px;
     padding: 30px;
-    background-color: #AB7100;
-    box-shadow: 1px 1px 10px 1px gray inset;
 }
 
 .proj {
@@ -140,13 +139,13 @@ nav a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     width: 400px;
-    height: 400px;
+    height: 100%;
     background-color: gray;
     margin: auto;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.164);
+    box-shadow: 10px 10px 10px rgb(103, 103, 103);
 }
 
-.proj a{
+.proj .img-proj {
     display: flex;
     width: 300px;
     height: 150px;
@@ -154,43 +153,83 @@ nav a:hover {
     margin: 20px auto;
 }
 
+.proj .img-proj img:hover {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    padding: 0px;
+}
+
 .proj img {
     width: 300px;
     height: 150px;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
 }
 
-.descricao-projeto{
+.descricao-projeto {
     display: flex;
-    height: 200px;
+    height: 300px;
     flex-direction: column;
     padding: 10px;
 }
 
-.descricao-projeto h2{
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: center;
-    margin: auto;
-    background-color: #0047AB;
+.titulo-proj{
+    display: flex;
+    background-color: black;
+    height: 150px;
+    padding: 5px;
 }
 
-.descricao-projeto a{
+.titulo-proj h2 {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.descricao-projeto a {
+    margin-bottom: 10px;
+}
+
+.descricao-projeto #descricao {
+    display: flex;
     text-decoration: none;
-    padding: 10px;
     text-align: center;
     width: 100%;
     height: 100%;
     background-color: #2e2e2e;
     color: white;
-    
 }
 
-.descricao-projeto a p{
+.descricao-projeto #descricao p {
     margin: auto;
     font-size: 0.9rem;
     font-weight: 300;
+}
+
+.descricao-projeto #descricao:hover {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+#logo-github {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: gray;
+    padding: 5px;
+}
+
+#logo-github:hover {
+    background-color: white;
+}
+
+#logo-github img {
+    width: 100%;
+    height: 100%;
 }
 
 /*SOBRE MIM----------------------------*/
@@ -254,7 +293,7 @@ footer div {
 }
 
 #descricao-footer {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 footer #redes-sociais {
