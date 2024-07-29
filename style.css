@@ -137,7 +137,7 @@ nav a:hover {
 }
 
 @media (max-width: 860px) {
-    #box-anterior{
+    #box-anterior {
         display: flex;
         width: 100%;
         height: 350px;
@@ -147,7 +147,7 @@ nav a:hover {
         height: 100%;
     }
 
-    #box-principal{
+    #box-principal {
         flex-direction: column-reverse;
         margin: 10px auto;
         width: 100%;
@@ -156,7 +156,7 @@ nav a:hover {
         ;
     }
 
-    #box-principal #descricao{
+    #box-principal #descricao {
         width: 100%;
         height: 100%;
         font-size: 1.2rem;
@@ -165,7 +165,7 @@ nav a:hover {
         line-height: 30px;
     }
 
-    #box-principal #descricao p{
+    #box-principal #descricao p {
         width: 100%;
         height: 100%;
     }
@@ -173,12 +173,12 @@ nav a:hover {
     .tecnologia {
         font-size: 1.2rem;
     }
-    
+
     .marcante {
         font-size: 1.2rem;
     }
 
-    #imagem-box img{
+    #imagem-box img {
         width: 100px;
         height: 100px;
         margin: 20px auto;
@@ -215,29 +215,27 @@ nav a:hover {
     box-shadow: 1px 1px 10px 1px gray inset;
 }
 
-#btn-esq{
+#btn-esq, #btn-dir {
     width: 100px;
     height: 200px;
     margin: auto;
+    box-shadow: 10px 10px 10px gray;
 }
 
-#btn-esq img{
+#btn-esq img, #btn-dir img {
     width: 100%;
 }
 
-#btn-dir{
-    width: 100px;
-    height: 200px;
-    margin: auto;
+#btn-esq:hover {
+    transform: scale(1.2);
 }
 
-#btn-dir img{
-    width: 100%;
+#btn-dir:hover {
+    transform: scale(1.2);
 }
 
 #projetos {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
     gap: 50px;
@@ -345,43 +343,43 @@ nav a:hover {
 }
 
 @media (max-width: 500px) {
-    #projects{
+    #projects {
         margin: 30px auto;
     }
 
-    #box-projetos, #projetos, .proj, .proj, .proj img, #descricao-projeto{
+    #box-projetos, #projetos, .proj, .proj, .proj img, #descricao-projeto {
         width: 100%;
     }
-    
-    #box-projetos{
+
+    #box-projetos {
         padding: 10px;
     }
 
-    .proj{
+    .proj {
         width: 100%;
         height: 100%;
     }
 
-    .img-proj{
+    .img-proj {
         width: 250px;
         height: 125px;
         margin: 10px;
     }
 
-    .img-proj img{
+    .img-proj img {
         width: 100%;
         height: 100%;
     }
 
-    #projetos{
+    #projetos {
         padding: 10px;
     }
 
-    .titulo-proj h2{
+    .titulo-proj h2 {
         font-size: 1.1rem;
     }
 
-    .descricao-projeto #descricao p{
+    .descricao-projeto #descricao p {
         font-size: 0.8rem;
     }
 }
@@ -425,15 +423,15 @@ nav a:hover {
 }
 
 @media (max-width: 950px) {
-    #sobre-mim{
+    #sobre-mim {
         width: 100%;
     }
 
-    #titulo{
+    #titulo {
         height: 60px;
     }
 
-    #box-sm p{
+    #box-sm p {
         width: 100%;
         height: 100%;
         padding: 10px 20px;
@@ -468,7 +466,7 @@ footer a, span {
     text-align: center;
 }
 
-#descricao-footer p{
+#descricao-footer p {
     margin: auto 0px;
 }
 
@@ -479,14 +477,14 @@ footer a, span {
     margin: 5px;
 }
 
-.img-rede-social{
+.img-rede-social {
     display: flex;
     width: 30px;
     height: 30px;
     padding: 1px;
 }
 
-.img-rede-social img{
+.img-rede-social img {
     background-color: white;
     width: 100%;
     height: 100%;
@@ -494,7 +492,7 @@ footer a, span {
     margin: auto;
 }
 
-.img-rede-social:hover{
+.img-rede-social:hover {
     border-radius: 0px;
     background-color: white;
     transition: 0.3s ease;
@@ -517,28 +515,28 @@ footer a, span {
 }
 
 @media (max-width: 530px) {
-    footer{
+    footer {
         width: 100%;
         height: 100%;
         padding: 5px;
         gap: 5px;
     }
 
-    #descricao-footer{
+    #descricao-footer {
         width: 100%;
         height: 100%;
         padding: 5px;
         margin: 0px;
     }
 
-    #descricao-footer p{
+    #descricao-footer p {
         width: 100%;
         height: 100%;
         font-size: 0.5rem;
         margin: auto;
     }
 
-    #redes-sociais{
+    #redes-sociais {
         width: 100%;
         height: 100%;
         font-size: 0.5rem;
@@ -547,12 +545,12 @@ footer a, span {
         margin: 0px;
     }
 
-    #redes-sociais a, span{
+    #redes-sociais a, span {
         margin: auto;
         font-size: 0.5rem;
     }
 
-    .img-rede-social{
+    .img-rede-social {
         width: 25px;
         height: 25px;
         padding: 2px;
