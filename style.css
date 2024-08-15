@@ -236,10 +236,11 @@ nav a:hover {
 
 #projetos {
     display: flex;
-    width: 100%;
+    width: 1100px;
     height: 100%;
     gap: 50px;
     padding: 30px;
+    margin: auto;
 }
 
 .proj {
