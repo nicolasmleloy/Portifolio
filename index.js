@@ -1,6 +1,6 @@
-var projInstagram = document.getElementsByClassName("proj")[0];
-var projAndroid = document.getElementsByClassName("proj")[1];
-var projSenac = document.getElementsByClassName("proj")[2];
+var projAndroid = document.getElementsByClassName("proj")[0];
+var projSenac = document.getElementsByClassName("proj")[1];
+var projInstagram = document.getElementsByClassName("proj")[2];
 var btnEsq = document.getElementById("btn-esq");
 var btnDir = document.getElementById("btn-dir");
 
@@ -11,10 +11,10 @@ function mostrarProjeto(indice) {
   for (var i = 0; i < projetos.length; i++) {
     if (i === indice) {
       projetos[i].style.display = "flex";
+      projetos[i].style.opacity = "100%";
     } else {
-      projetos[i].style.display = "none";
+      projetos[i].style.opacity = "20%";
     }
-    projetos[i].style.transition = "1s";
   }
 }
 
@@ -27,12 +27,15 @@ function atualizarBotoes() {
     btnDir.style.backgroundColor = "#0047AB";
     btnDir.style.opacity = "100%";
     btnDir.style.transition = "0.5s";
+    btnEsq.style.animation = "none";
+    btnDir.style.animation = "none";
   }
 
   if (projetoAtual === 0) {
     btnEsq.style.backgroundColor = "gray";
     btnEsq.style.opacity = "30%";
     btnEsq.style.transition = "0.5s";
+    btnDir.style.animation = "ampliar 1.5s linear infinite";
   } else {
     btnEsq.style.backgroundColor = "#0047AB";
     btnEsq.style.opacity = "100%";
@@ -58,5 +61,7 @@ btnEsq.addEventListener("click", () => {
   mostrarProjeto(projetoAtual);
 });
 
-mostrarProjeto(projetoAtual);
-atualizarBotoes();
+if (window.innerWidth >= 1160) {
+  mostrarProjeto(projetoAtual);
+  atualizarBotoes();
+}
