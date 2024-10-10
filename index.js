@@ -1,10 +1,11 @@
 var projAndroid = document.getElementsByClassName("proj")[0];
-var projSenac = document.getElementsByClassName("proj")[1];
+var projAlgoritmos = document.getElementsByClassName("proj")[1];
 var projInstagram = document.getElementsByClassName("proj")[2];
+var projDevWeb = document.getElementsByClassName("proj")[3];
 var btnEsq = document.getElementById("btn-esq");
 var btnDir = document.getElementById("btn-dir");
 
-var projetos = [projAndroid, projSenac, projInstagram];
+var projetos = [projAndroid, projAlgoritmos, projInstagram, projDevWeb];
 var projetoAtual = 0;
 
 function mostrarProjeto(indice) {
