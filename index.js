@@ -13,8 +13,10 @@ function mostrarProjeto(indice) {
     if (i === indice) {
       projetos[i].style.display = "flex";
       projetos[i].style.opacity = "100%";
+      projetos[i].style.pointerEvents = "all";
     } else {
       projetos[i].style.opacity = "20%";
+      projetos[i].style.pointerEvents = "none";
     }
   }
 }
