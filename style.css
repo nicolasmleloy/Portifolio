@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
     margin: 0px;
@@ -32,7 +32,7 @@ nav a {
 
 nav a:hover {
     background-color: white;
-    color: #0047AB;
+    color: #0047ab;
 }
 
 #nome-principal {
@@ -63,7 +63,7 @@ nav a:hover {
         font-size: 1.2rem;
         text-align: center;
         background-color: white;
-        color: #0047AB;
+        color: #0047ab;
     }
 
     #menu {
@@ -88,8 +88,8 @@ nav a:hover {
     margin: 100px auto 100px auto;
     width: 700px;
     height: 100%;
-    border: 1px solid #0047AB;
-    box-shadow: 15px 15px #0047AB;
+    border: 1px solid #0047ab;
+    box-shadow: 15px 15px #0047ab;
     background-color: white;
     transition: all 0.3s linear;
 }
@@ -115,16 +115,16 @@ nav a:hover {
 
 #ola {
     font-size: 3rem;
-    color: #AB7100;
+    color: #ab7100;
 }
 
 .tecnologia {
-    color: #0047AB;
+    color: #0047ab;
     font-weight: 700;
 }
 
 .marcante {
-    color: #AB7100;
+    color: #ab7100;
     font-weight: 700;
 }
 
@@ -157,8 +157,7 @@ nav a:hover {
         margin: 10px auto;
         width: 100%;
         height: 100%;
-        box-shadow: 8px 8px #0047AB;
-        ;
+        box-shadow: 8px 8px #0047ab;
     }
 
     #box-principal #descricao {
@@ -210,7 +209,7 @@ nav a:hover {
 
 #projects a:hover {
     background-color: white;
-    color: #0047AB;
+    color: #0047ab;
 }
 
 #box-projetos {
@@ -236,7 +235,8 @@ nav a:hover {
     }
 }
 
-#btn-esq, #btn-dir {
+#btn-esq,
+#btn-dir {
     width: 100px;
     height: 200px;
     margin: auto;
@@ -245,11 +245,13 @@ nav a:hover {
     cursor: pointer;
 }
 
-#btn-esq img, #btn-dir img {
+#btn-esq img,
+#btn-dir img {
     width: 100%;
 }
 
-#btn-esq:hover, #btn-dir:hover {
+#btn-esq:hover,
+#btn-dir:hover {
     transform: scale(1.1);
 }
 
@@ -278,7 +280,7 @@ nav a:hover {
     display: flex;
     width: 300px;
     height: 150px;
-    background-color: #0047AB;
+    background-color: #0047ab;
     margin: 20px auto;
 }
 
@@ -317,6 +319,7 @@ nav a:hover {
     color: white;
     text-align: center;
     margin: auto;
+    font-size: 1.2rem;
 }
 
 .descricao-projeto a {
@@ -371,7 +374,8 @@ nav a:hover {
         flex-wrap: wrap;
     }
 
-    #btn-dir, #btn-esq {
+    #btn-dir,
+    #btn-esq {
         display: none;
     }
 }
@@ -381,7 +385,12 @@ nav a:hover {
         margin: 30px auto;
     }
 
-    #box-projetos, #projetos, .proj, .proj, .proj img, #descricao-projeto {
+    #box-projetos,
+    #projetos,
+    .proj,
+    .proj,
+    .proj img,
+    #descricao-projeto {
         width: 100%;
     }
 
@@ -428,7 +437,7 @@ nav a:hover {
     height: 100%;
     background-color: rgb(37, 37, 37);
     margin: auto;
-    box-shadow: 0px 1px 20px 5px #7d7d7d4d
+    box-shadow: 0px 1px 20px 5px #7d7d7d4d;
 }
 
 #box-sm {
@@ -488,7 +497,8 @@ footer {
     gap: 5px;
 }
 
-footer a, span {
+footer a,
+span {
     text-decoration: none;
     color: white;
     margin: auto;
@@ -542,7 +552,7 @@ footer a, span {
 
 #gmail:hover {
     background-color: white;
-    color: #0047AB;
+    color: #0047ab;
 }
 
 #linkedin {
@@ -581,7 +591,8 @@ footer a, span {
         margin: 0px;
     }
 
-    #redes-sociais a, span {
+    #redes-sociais a,
+    span {
         margin: auto;
         font-size: 0.5rem;
     }
